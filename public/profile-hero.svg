@@ -1,0 +1,39 @@
+<svg width="1200" height="640" viewBox="0 0 1200 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PIKICHAN abstract portrait</title>
+  <desc id="desc">An abstract illustration with gradients and soft shapes in blue colors.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#6aa9ff" />
+      <stop offset="45%" stop-color="#4f7dff" />
+      <stop offset="100%" stop-color="#273c8f" />
+    </linearGradient>
+    <linearGradient id="face" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffe6d9" />
+      <stop offset="50%" stop-color="#f9c9b4" />
+      <stop offset="100%" stop-color="#f0a693" />
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3c52af" />
+      <stop offset="100%" stop-color="#18245f" />
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox">
+      <feGaussianBlur stdDeviation="40" result="blur" />
+      <feBlend in="SourceGraphic" in2="blur" mode="screen" />
+    </filter>
+  </defs>
+  <rect width="1200" height="640" rx="48" fill="url(#bg)" />
+  <g opacity="0.36" filter="url(#soft)">
+    <circle cx="200" cy="120" r="220" fill="#ffffff" />
+    <circle cx="1070" cy="520" r="210" fill="#7bc6ff" />
+    <circle cx="980" cy="140" r="150" fill="#8dd9ff" />
+  </g>
+  <g transform="translate(330 90)">
+    <ellipse cx="270" cy="348" rx="270" ry="170" fill="url(#shirt)" />
+    <ellipse cx="270" cy="190" rx="170" ry="170" fill="url(#face)" />
+    <path d="M130 110c32-62 104-102 173-102s141 40 173 102c18 36 27 80 18 121-48 22-109 35-191 35s-142-13-190-35c-10-41-2-85 17-121z" fill="#2b1e1f" opacity="0.9" />
+    <ellipse cx="210" cy="170" rx="24" ry="26" fill="#1f1416" opacity="0.9" />
+    <ellipse cx="330" cy="170" rx="24" ry="26" fill="#1f1416" opacity="0.9" />
+    <path d="M240 220c12 14 30 22 48 22s36-8 48-22" fill="none" stroke="#1f1416" stroke-width="10" stroke-linecap="round" />
+    <path d="M132 298c48 54 105 76 170 76s122-22 170-76" fill="none" stroke="#f8a89d" stroke-width="20" stroke-linecap="round" />
+  </g>
+</svg>
